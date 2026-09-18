@@ -7,7 +7,7 @@ header, main, footer { padding: 1.5rem; }
 header { background: #1b3a5b; color: #fff; }
 .nav a { color: #fff; margin-right: 1rem; }
 /* WCAG 1.4.3 (color-contrast) [PR]: gris claro sobre blanco, ~2.3:1 */
-.muted { color: #b9b9b9; }
+.muted { color: #767676; }
 .icon-btn { background: transparent; border: 0; cursor: pointer; }
 table { border-collapse: collapse; margin-top: 1rem; }
 td, th { border: 1px solid #ccc; padding: .4rem .8rem; }
