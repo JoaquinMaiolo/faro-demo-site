@@ -32,7 +32,7 @@ td, th { border: 1px solid #ccc; padding: .4rem .8rem; }
 #nombre { padding: .5rem; }
 #subscribe-btn { background: #2e6da4; color: #fff; border: 0; padding: .6rem 1rem; }
 /* WCAG 2.4.7 (faro-focus-visible) [PR]: el foco del botón queda invisible */
-#subscribe-btn:focus { outline: none; }
+#subscribe-btn:focus { outline: 2px solid #2E75B6; /* FARO — WCAG 2.4.7 */ outline-offset: 2px;}
 
 /* WCAG 1.4.1 (link-in-text-block) [PR]: enlace distinguible solo por color */
 #terms-link { color: #2e6da4; text-decoration: none; }
