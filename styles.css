@@ -38,5 +38,5 @@ td, th { border: 1px solid #ccc; padding: .4rem .8rem; }
 #terms-link { color: #2e6da4; text-decoration: none; }
 
 /* WCAG 2.5.8 (target-size) [PR]: botones de cantidad de 16x16 pegados entre sí */
-#qty-minus { width: 16px; height: 16px; padding: 0; margin: 0; font-size: 10px; line-height: 1; }
-#qty-plus { width: 16px; height: 16px; padding: 0; margin: 0; font-size: 10px; line-height: 1; }
+#qty-minus { width: 16px; height: 16px; padding: 0; margin: 0; font-size: 10px; line-height: 1; /* FARO — WCAG 2.5.8 */ min-width: 24px; min-height: 24px;}
+#qty-plus { width: 16px; height: 16px; padding: 0; margin: 0; font-size: 10px; line-height: 1; /* FARO — WCAG 2.5.8 */ min-width: 24px; min-height: 24px;}
