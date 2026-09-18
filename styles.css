@@ -28,9 +28,9 @@ td, th { border: 1px solid #ccc; padding: .4rem .8rem; }
 
 /* Formulario del newsletter. Reglas por id: el sourcemapper ubica la regla
    cuyo selector coincide con el del hallazgo (#id). */
-#email { padding: .5rem; }
-#nombre { padding: .5rem; }
-#subscribe-btn { background: #2e6da4; color: #fff; border: 0; padding: .6rem 1rem; }
+#email { padding: .5rem; /* FARO — WCAG 2.4.11 */ scroll-margin-top: 96px;}
+#nombre { padding: .5rem; /* FARO — WCAG 2.4.11 */ scroll-margin-top: 96px;}
+#subscribe-btn { background: #2e6da4; color: #fff; border: 0; padding: .6rem 1rem; /* FARO — WCAG 2.4.11 */ scroll-margin-top: 96px;}
 /* WCAG 2.4.7 (faro-focus-visible) [PR]: el foco del botón queda invisible */
 #subscribe-btn:focus { outline: none; }
 
