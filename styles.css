@@ -1,0 +1,42 @@
+/*
+  FIXTURE DE PRUEBA DE FARO — errores INTENCIONALES (ver comentarios en index.html).
+  El CSS vive en archivo aparte para que el sourcemapper pueda ubicarlo y abrir PR.
+*/
+body { font-family: system-ui, sans-serif; margin: 0; color: #222; padding-bottom: 96px; }
+header, main, footer { padding: 1.5rem; }
+header { background: #1b3a5b; color: #fff; }
+.nav a { color: #fff; margin-right: 1rem; }
+/* WCAG 1.4.3 (color-contrast) [PR]: gris claro sobre blanco, ~2.3:1 */
+.muted { color: #b9b9b9; }
+.icon-btn { background: transparent; border: 0; cursor: pointer; }
+table { border-collapse: collapse; margin-top: 1rem; }
+td, th { border: 1px solid #ccc; padding: .4rem .8rem; }
+.section { min-height: 60vh; }
+/*
+  WCAG 2.4.11 (faro-focus-obscured) [PR]: banner fijo abajo que tapa los
+  links del final cuando reciben foco con Tab.
+*/
+.cookie-banner {
+  position: fixed; left: 0; right: 0; bottom: 0; height: 96px;
+  background: #1b3a5b; color: #fff; padding: 1rem 1.5rem; box-sizing: border-box;
+}
+.cookie-banner a { color: #fff; }
+/* WCAG 1.3.4 (faro-orientation-lock) [PR]: fuerza la vista horizontal */
+@media (orientation: portrait) {
+  html { transform: rotate(90deg); }
+}
+
+/* Formulario del newsletter. Reglas por id: el sourcemapper ubica la regla
+   cuyo selector coincide con el del hallazgo (#id). */
+#email { padding: .5rem; }
+#nombre { padding: .5rem; }
+#subscribe-btn { background: #2e6da4; color: #fff; border: 0; padding: .6rem 1rem; }
+/* WCAG 2.4.7 (faro-focus-visible) [PR]: el foco del botón queda invisible */
+#subscribe-btn:focus { outline: none; }
+
+/* WCAG 1.4.1 (link-in-text-block) [PR]: enlace distinguible solo por color */
+#terms-link { color: #2e6da4; text-decoration: none; }
+
+/* WCAG 2.5.8 (target-size) [PR]: botones de cantidad de 16x16 pegados entre sí */
+#qty-minus { width: 16px; height: 16px; padding: 0; margin: 0; font-size: 10px; line-height: 1; }
+#qty-plus { width: 16px; height: 16px; padding: 0; margin: 0; font-size: 10px; line-height: 1; }
